@@ -24,7 +24,7 @@ int main() {
     Cylinder cy1;
     cy1.cyInfo();
     cy1.setRadius(3.0);
-    cy1.setHeight(5.0);
+    cy1.setLength(5.0);
     cy1.cyInfo();
 
     Rectangle r1;
@@ -33,4 +33,5 @@ int main() {
     r1.setHeight(5.0);
     r1.recInfo();
     return 0;
+
 }
