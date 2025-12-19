@@ -18,7 +18,7 @@ class Cylinder:
         self.__length = length
 
     def area(self):
-        return math.pi * pow(self.__radius, 2) * (self.__radius + self.__length)
+        return 2 * math.pi * self.__radius * (self.__radius + self.__length)
     
     def volume(self):
         return self.area() * self.__length
@@ -26,3 +26,4 @@ class Cylinder:
     def cylinder_info(self):
 
         return f"Cylinder: Radius = {self.__radius:.2f}, Lenght = {self.__length:.2f}, Area = {self.area():.2f}, Volume = {self.volume():.2f}"
+
