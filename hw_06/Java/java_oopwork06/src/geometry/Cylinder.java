@@ -1,11 +1,11 @@
 public class Cylinder {
 
     private double radius;
-    private double height;
+    private double length;
 
-    public Cylinder(double radius, double height) {
+    public Cylinder(double radius, double length) {
         this.radius = radius;
-        this.height = height;
+        this.length = length;
     }
 
     public Cylinder() {
@@ -20,27 +20,28 @@ public class Cylinder {
         this.radius = radius;
     }
 
-    public double getHeight() {
-        return height;
+    public double getLength() {
+        return length;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
+    public void setLength(double length) {
+        this.length = length;
     }
 
     public double area() {
-        return Math.PI * Math.pow(radius, 2);
+        return Math.PI * Math.pow(radius, 2) * (radius + length);
     }
 
     public double volume() {
-        return area() * height;
+        return area() * length;
     }
 
     public void showCyInfo() {
         System.out.println("\nCylinder:");
         System.out.printf("Radius = %.2f%n", radius);
-        System.out.printf("Height = %.2f%n", height);
+        System.out.printf("Length = %.2f%n", length);
         System.out.printf("Area = %.2f%n", area());
         System.out.printf("Volume = %.2f%n", volume());
     }
 }
+
