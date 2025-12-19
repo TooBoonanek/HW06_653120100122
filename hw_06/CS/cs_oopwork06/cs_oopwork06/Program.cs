@@ -29,7 +29,8 @@ class Program
         var cy1 = new Cylinder();
         cy1.CyInfo();
         cy1.SetRadius(2.0);
-        cy1.SetHeight(6.0);
+        cy1.SetLength(6.0);
         cy1.CyInfo();
     }
+
 }
