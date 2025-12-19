@@ -6,7 +6,7 @@ using namespace std;
 class Cylinder {
     private:
         double radius;
-        double height;
+        double length;
 
     public:
         double getRadius(){
@@ -17,27 +17,28 @@ class Cylinder {
             this->radius = radius;
         }
 
-        double getHeight(){
-            return height;
+        double getLngth(){
+            return length;
         }
 
-        void setHeight(double height){
-            this->height = height;
+        void setLength(double length){
+            this->length = length;
         }
 
-        Cylinder(double radius, double height): radius(radius), height(height) {}
+        Cylinder(double radius, double length): radius(radius), length(length) {}
     
         Cylinder(): Cylinder(1.0, 1.0){}
 
         double area(){
-            return M_PI * pow(radius, 2);
+            return M_PI * pow(radius, 2) * (radius + length);
         }
 
         double volume(){
-            return area() * height;
+            return area() * length;
         }
 
         void cyInfo(){
-            cout << "Cylinder: Radius = " << radius << ", Height = " << height << ", Area = " << area() << ", Volume = " << volume() << endl;
+            cout << "Cylinder: Radius = " << radius << ", Length = " << length << ", Area = " << area() << ", Volume = " << volume() << endl;
         }
+
 };
