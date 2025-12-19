@@ -29,7 +29,7 @@ public class Cylinder {
     }
 
     public double area() {
-        return Math.PI * Math.pow(radius, 2) * (radius + length);
+        return 2 * Math.PI * radius * (radius + length);
     }
 
     public double volume() {
@@ -44,4 +44,5 @@ public class Cylinder {
         System.out.printf("Volume = %.2f%n", volume());
     }
 }
+
 
