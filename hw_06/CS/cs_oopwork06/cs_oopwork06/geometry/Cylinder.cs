@@ -50,8 +50,9 @@ namespace cs_oopwork06
 
         public void CyInfo()
         {
-            System.Console.WriteLine($"Cylinder: Radius = {radius:N2}, Height = {length:N2}, Area = {area():N2}, Volume = {volume():N2}");
+            System.Console.WriteLine($"Cylinder: Radius = {radius:N2}, Length = {length:N2}, Area = {area():N2}, Volume = {volume():N2}");
         }
     }
 
 }
+
