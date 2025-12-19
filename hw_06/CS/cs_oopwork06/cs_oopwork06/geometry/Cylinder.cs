@@ -40,7 +40,7 @@ namespace cs_oopwork06
 
         public double area()
         {
-            return Math.PI * Math.Pow(radius, 2) * (radius + length);
+            return 2 * Math.PI * radius * (radius + length);
         }
 
         public double volume()
@@ -55,4 +55,5 @@ namespace cs_oopwork06
     }
 
 }
+
 
