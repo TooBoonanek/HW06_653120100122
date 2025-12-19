@@ -30,7 +30,7 @@ class Cylinder {
         Cylinder(): Cylinder(1.0, 1.0){}
 
         double area(){
-            return M_PI * pow(radius, 2) * (radius + length);
+            return 2 * M_PI * radius * (radius + length);
         }
 
         double volume(){
@@ -42,3 +42,4 @@ class Cylinder {
         }
 
 };
+
