@@ -25,11 +25,12 @@ print("========================================================")
 
 cy1 = Cylinder()
 cy1.set_radius(5.0)
-cy1.set_height(4.0)
+cy1.set_length(4.0)
 print(cy1.cylinder_info())
 print("========================================================")
 
 cir1 = Circle()
 cir1.set_radius(5.0)
 print(cir1.circle_info())
+
 print("========================================================")
