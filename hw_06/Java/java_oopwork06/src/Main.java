@@ -23,7 +23,8 @@ public class Main {
         var cy1 = new Cylinder();
         cy1.showCyInfo();
         cy1.setRadius(5.0);
-        cy1.setHeight(4.0);
+        cy1.setLength(4.0);
         cy1.showCyInfo();
     }
 }
+
