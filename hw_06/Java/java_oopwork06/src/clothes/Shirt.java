@@ -1,3 +1,5 @@
+package clothes;
+
 public class Shirt {
     private Color color;
     private Size size;
@@ -41,3 +43,4 @@ public class Shirt {
         this.price = price;
     }
 }
+
