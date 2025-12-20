@@ -1,3 +1,5 @@
+import clothes.*;
+
 public class Main {
     public static void main(String[] args) {
         var s1 = new Shirt();
@@ -27,4 +29,5 @@ public class Main {
         cy1.showCyInfo();
     }
 }
+
 
