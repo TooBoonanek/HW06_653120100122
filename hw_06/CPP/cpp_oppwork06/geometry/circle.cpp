@@ -21,29 +21,12 @@ class Circle {
 
         Circle():Circle(6.0){}
 
-        // in class
-        // double area(){
-        //     return M_PI * pow(radius, 2);
-        // }
-
-        // out class
-        double area();
-
-        double diameter() {
-            return 2 * radius;
-        }
-
-        double circumference() {
-            return 2 * M_PI * radius;
+        double area(){
+            return M_PI * pow(radius, 2);
         }
 
         void cirInfo(){
-            cout << fixed << setprecision(2) << "Circle: Radius = " << radius << ", Area = " << area() << ", Diameter = " << diameter() << ", Circumference = " << circumference() << endl;
-        }        // ทศนิยม #include <iomanip>
+            cout << fixed << setprecision(2) << "Circle: Radius = " << radius << ", Area = " << area() << endl;
+        }   
 
 };
-
-// area out class
-double Circle::area(){
-    return M_PI * pow(radius, 2);
-}
