@@ -32,19 +32,10 @@ namespace cs_oopwork06
             return Math.PI * Math.Pow(radius, 2);
         }
 
-        public double diamater()
-        {
-            return 2 * radius;
-        }
-
-        public double circumference()
-        {
-            return 2 * Math.PI * radius;
-        }
-
         public void cirInfo()
         {
-            System.Console.WriteLine($"Circle: Radius = {radius:N2}, Area = {area():N2}, Diameter = {diamater():N2}, Circumference = {circumference():N2}");
+            System.Console.WriteLine($"Circle: Radius = {radius:N2}, Area = {area():N2}");
         }
     }
+
 }
