@@ -22,19 +22,10 @@ public class Circle {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    public double diameter() {
-        return 2 * radius;
-    }
-
-    public double circumference() {
-        return 2 * Math.PI * radius;
-    }
-
     public void showCirInfo() {
         System.out.println("\nCircle:");
         System.out.printf("Radius = %.2f%n", radius);
         System.out.printf("Area = %.2f%n", area());
-        System.out.printf("Diameter = %.2f%n", diameter());
-        System.out.printf("Circumference = %.2f%n", circumference());
     }
 }
+
